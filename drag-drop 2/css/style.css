@@ -1,0 +1,65 @@
+body {
+  background: url(https://previews.123rf.com/images/lexiclaus/lexiclaus2002/lexiclaus200200042/139403432-vector-seamless-pattern-with-different-flower-elements-garden-repeating-background-with-decorative-p.jpg);
+}
+
+#DragImage {
+  padding: 40px;
+  -webkit-box-shadow: inset 0 0 20px 0 #504f4f;
+          box-shadow: inset 0 0 20px 0 #504f4f;
+  background: #fff;
+}
+
+#DragImage .drag-content {
+  padding: 40px;
+  border: 1px solid dashed #7a2525;
+  text-align: center;
+}
+
+#DragImage .drag-content.active i {
+  -webkit-animation: icoAni 1s infinite;
+          animation: icoAni 1s infinite;
+  opacity: 1;
+  pointer-events: none;
+  visibility: visible;
+}
+
+#DragImage .drag-content.active p {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  pointer-events: none;
+}
+
+#DragImage .drag-content p {
+  font-size: 1.2em;
+  font-weight: 700;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#DragImage .drag-content i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@-webkit-keyframes icoAni {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+@keyframes icoAni {
+  from {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
